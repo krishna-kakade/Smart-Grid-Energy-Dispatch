@@ -21,11 +21,7 @@ Visualizes results through a Flask-based backend
 
 # Tech Stack
 
-Programming Language
-
 Python
-
-Frameworks & Libraries
 
 Flask
 
@@ -35,37 +31,11 @@ Scikit-learn
 
 XGBoost
 
+RBI-LSTM
+
+TIMEGPT
+
 TensorFlow / Keras
-
-Tools
-
-Git & GitHub
-
-Joblib
-
-Jupyter Notebook
-
-# Project Structure
-smart-grid-energy-dispatch/
-│
-├── backend/
-│   ├── app.py                 # Flask application entry point
-│   ├── requirements.txt       # Project dependencies
-│   ├── data/                  # Data directory (ignored in GitHub)
-│   ├── models/                # Trained models (ignored in GitHub)
-│   ├── static/                # CSS / JS files
-│   └── templates/             # HTML templates
-│
-├── reports/
-│   ├── figures/               # Graphs and visual outputs
-│   ├── adaptive/              # Adaptive dispatch results
-│   ├── extreme/               # Extreme load case analysis
-│   └── opt_results/           # Optimization results
-│
-├── scripts/                   # Training & preprocessing scripts
-│
-├── README.md
-├── .gitignore
 
 # Features
 
@@ -121,7 +91,6 @@ Large datasets (.csv, .xlsx)
 
 These files can be recreated by running the scripts in the scripts/ directory.
 
-This follows industry-standard best practices for version control.
 
 # Use Cases
 
@@ -137,3 +106,4 @@ Academic research in AI-based energy systems
 
 Krishna Kakade
 Engineering Student | AI & ML Enthusiast
+
