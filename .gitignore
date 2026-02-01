@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+
+# Data
+*.csv
+*.xlsx
+backend/data/
+
+# Models
+*.h5
+*.joblib
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
