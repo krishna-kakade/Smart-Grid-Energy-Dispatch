@@ -1,24 +1,25 @@
- Smart Grid Energy Dispatch & Forecasting System
+# Smart Grid Energy Dispatch & Forecasting System
 
-An AI-powered energy dispatch and forecasting system designed to optimize power distribution in smart grids using machine learning and deep learning models.
-The project predicts future energy demand and supports decision-making for adaptive and extreme load conditions.
+An AI-driven smart grid energy dispatch and forecasting system designed to predict electricity demand and support optimized power distribution under adaptive and extreme load conditions using machine learning and deep learning models.
 
- Project Overview
+This project focuses on forecast accuracy, system scalability, and clean backend design, making it suitable for academic evaluation and real-world smart grid research.
 
-Modern smart grids require accurate demand forecasting and intelligent dispatch strategies to ensure efficiency, stability, and cost optimization.
-This project implements a hybrid AI-based solution using:
+# Project Overview
 
-Time-series forecasting
+Smart grids require accurate demand forecasting and intelligent dispatch strategies to ensure stability, efficiency, and cost optimization.
+This project implements a hybrid AI approach combining time-series forecasting, deep learning, and machine learning techniques.
 
-Deep learning (RBI-LSTM)
+The system:
 
-Machine learning (XGBoost)
+Processes historical energy data
 
-Web-based visualization using Flask
+Predicts future energy demand
 
-The system processes historical energy data, predicts future demand, and generates optimized dispatch results.
+Analyzes dispatch strategies for different load scenarios
 
- Tech Stack
+Visualizes results through a Flask-based backend
+
+# Tech Stack
 
 Programming Language
 
@@ -26,7 +27,7 @@ Python
 
 Frameworks & Libraries
 
-Flask (Web backend)
+Flask
 
 NumPy, Pandas
 
@@ -40,103 +41,99 @@ Tools
 
 Git & GitHub
 
-Jupyter Notebook (experimentation)
+Joblib
 
-Joblib (model persistence)
+Jupyter Notebook
 
- Project Structure
+# Project Structure
 smart-grid-energy-dispatch/
 │
 ├── backend/
 │   ├── app.py                 # Flask application entry point
 │   ├── requirements.txt       # Project dependencies
-│   │
-│   ├── data/
-│   │   ├── raw/               # Raw input datasets (ignored in Git)
-│   │   ├── processed/         # Cleaned & transformed data
-│   │   └── forecasts/         # Model prediction outputs
-│   │
-│   ├── models/
-│   │   ├── rbilstm/            # Deep learning models
-│   │   └── xgb/                # XGBoost models
-│   │
+│   ├── data/                  # Data directory (ignored in GitHub)
+│   ├── models/                # Trained models (ignored in GitHub)
 │   ├── static/                # CSS / JS files
 │   └── templates/             # HTML templates
 │
 ├── reports/
-│   ├── figures/               # Graphs & visual outputs
+│   ├── figures/               # Graphs and visual outputs
 │   ├── adaptive/              # Adaptive dispatch results
 │   ├── extreme/               # Extreme load case analysis
-│   └── opt_results/           # Optimization outputs
+│   └── opt_results/           # Optimization results
+│
+├── scripts/                   # Training & preprocessing scripts
 │
 ├── README.md
 ├── .gitignore
 
- Features
+# Features
 
- Energy demand forecasting using ML & DL models
+ Energy demand forecasting using ML and DL models
 
- Optimized power dispatch for adaptive and extreme conditions
+ Power dispatch analysis for adaptive and extreme scenarios
 
- Flask-based web interface for visualization
+ Flask-based backend for result visualization
 
- Comparative analysis of forecasting models
+ Model performance and result analysis
 
- Modular and scalable backend design
+ Modular and scalable project structure
 
- How to Run the Project
-1️ Clone the Repository
+# How to Run the Project
+1️. Clone the Repository
 git clone https://github.com/your-username/smart-grid-energy-dispatch.git
 cd smart-grid-energy-dispatch
 
-2️ Install Dependencies
+2️. Install Dependencies
 cd backend
 pip install -r requirements.txt
 
-3️ Run the Application
+3️. Run the Application
 python app.py
 
-4️ Open in Browser
-http://127.0.0.1:5000/
+4️. Open in Browser
 
- Models Used
+# Models Used
 
 RBI-LSTM
-Captures temporal dependencies for accurate long-term demand forecasting.
+Used for capturing long-term temporal dependencies in energy demand data.
 
 XGBoost
-Provides fast and interpretable predictions for structured energy data.
+Used for fast, accurate predictions on structured energy datasets.
 
- Results
+# Results
 
 Improved forecasting accuracy compared to baseline methods
 
-Efficient dispatch planning under varying load conditions
+Effective dispatch planning for varying load conditions
 
-Visual analytics for demand trends and optimization outcomes
+Clear visual insights for energy demand and optimization outcomes
 
-(Refer to the reports/figures directory for graphs and plots.)
+Graphs and analysis outputs are available in the reports/ directory.
 
- Notes
+# Important Note on Data & Models
 
-Large datasets and trained model files are excluded from GitHub using .gitignore
+Due to GitHub file size limitations, the following are intentionally excluded:
 
-Models can be retrained using the provided pipeline
+Trained model files (.h5, .joblib)
 
-The project is structured for easy deployment and future expansion
+Large datasets (.csv, .xlsx)
 
- Use Cases
+These files can be recreated by running the scripts in the scripts/ directory.
+
+This follows industry-standard best practices for version control.
+
+# Use Cases
 
 Smart grid energy management
 
-Power demand forecasting
+Electricity demand forecasting
 
 Load balancing and dispatch optimization
 
-Academic research & AI-based energy systems
+Academic research in AI-based energy systems
 
- Author
+# Author
 
 Krishna Kakade
-
 Engineering Student | AI & ML Enthusiast
