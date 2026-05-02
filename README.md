@@ -51,7 +51,7 @@ TensorFlow / Keras
 
 # How to Run the Project
 1️. Clone the Repository
-git clone https://github.com/your-username/smart-grid-energy-dispatch.git
+git clone https://github.com/krishna-kakade/smart-grid-energy-dispatch.git
 cd smart-grid-energy-dispatch
 
 2️. Install Dependencies
